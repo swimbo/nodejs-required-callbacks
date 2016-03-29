@@ -10,7 +10,7 @@
 var fs = require('fs');
 console.log(process.argv)
 
-var lumosity = function(Red, Green, Blue){
+var getLumosity = function(Red, Green, Blue){
   fs.readFileSync(process.argv[1], 'utf-8');
   var Red = process.argv[2];
   var Blue = process.argv[3];
@@ -18,7 +18,7 @@ var lumosity = function(Red, Green, Blue){
   var lumosity = 0.2126*Red + 0.7152*Blue + 0.0722*Green;
   console.log(lumosity);
 }
-lumosity()
+getLumosity()
 
 //
 
